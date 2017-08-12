@@ -1,2 +1,7 @@
-# website
-Official website for S.P.I.T. Matrix 2017
+# Matrix'17 Website
+
+Branch: prod
+
+This branch will serve as the production branch.
+At first *coming soon* will be put here.
+Then the master branch will be merged with this.
