@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/flipclock.css">
-
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		<script src="js/flipclock.min.js"></script>
@@ -10,28 +10,20 @@ body, html {
     height: 100%;
     margin: 0;
 }
-
-.bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
+.tv{
+	background-image: url('images/retrotv.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 100%;
+	width:70%;
+	margin-left:15%;
 }
 
 .middle {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -40,19 +32,21 @@ hr {
     margin: auto;
     width: 40%;
 }
+.clock{
+zoom: 0.5;
+-moz-transform: scale(0.5)
+}
+
 </style>
 
 	</head>
-	<body data-vide-bg="video/ocean">
+	<body data-vide-bg="" class="text-center">
 
-<div class="bgimg">
+<div class="tv">
   <div class="middle">
     <h1>COMING SOON</h1>
-	<div class="clock" style="margin:2em;"></div>
+	<div class="clock"></div>
 	<div class="message"></div>
-  </div>
-  <div class="bottomleft">
-    <p>Some text</p>
   </div>
 </div>
 	<script type="text/javascript">
