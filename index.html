@@ -6,26 +6,22 @@
 
 		<script src="js/flipclock.min.js"></script>
 <style>
+@font-face{
+	font-family: retro;
+	src :url(fonts/BadMofo.ttf);
+}
 body, html {
     height: 100%;
     margin: 0;
 }
-.tv{
-	background-image: url('images/retrotv.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 100%;
-	width:70%;
-	margin-left:15%;
-}
-
 .middle {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: retro;
+    color:white;
 }
 
 hr {
@@ -33,30 +29,75 @@ hr {
     width: 40%;
 }
 .clock{
-zoom: 0.5;
--moz-transform: scale(0.5)
-}
+zoom: 0.7;
+opacity: 0;
+-moz-transform: scale(0.7);
+animation: pullup 1s ease-in;
+animation-fill-mode:forwards ;
 
+}
+.heading{
+		opacity: 0;
+		transition-delay: 1s;
+		animation: pullup 2s ease-in;
+animation-fill-mode:forwards ;
+}
+.logo{
+		opacity: 0;
+		transition-delay: 2s;
+		animation: pullup 3s ease-in;
+		animation-fill-mode:forwards ;
+}
+.noise-wrapper{
+	width: 100%;
+	height: 100%;
+}
+.layer {
+    background-color: rgba(0,0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h1{
+	font-size: 100px;
+}
+@keyframes pullup {
+ from {
+ opacity:0;
+ transform:translateY(10%);
+}
+ to {
+ opacity:1;
+}
+}
 </style>
 
 	</head>
-	<body data-vide-bg="" class="text-center">
-
-<div class="tv">
+	<body class="text-center">
+	<div class="layer">
+<div class="noise-wrapper" data-vide-bg="video/noise.mp4">
   <div class="middle">
-    <h1>COMING SOON</h1>
+  <div class="text-center logo">
+  	<img src="images/Matrixlogo2.png"  style="height:20%;width:auto">
+  </div>
+  <br>
+    <h1 class="heading">COMING SOON</h1>
+    <br>
 	<div class="clock"></div>
 	<div class="message"></div>
   </div>
+  </div>
 </div>
-	<script type="text/javascript">
+<script type="text/javascript">
 		var clock;
 		
 		$(document).ready(function() {
 			var clock;
 
 			clock = $('.clock').FlipClock({
-		        clockFace: 'DayCounter',
+		        clockFace: 'DailyCounter',
 		        autoStart: false,
 		        callbacks: {
 		        	stop: function() {

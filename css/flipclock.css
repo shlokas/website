@@ -1,5 +1,9 @@
 /* Get the bourbon mixin from http://bourbon.io */
 /* Reset */
+@font-face{
+  font-family: retro;
+  src :url(fonts/BadMofo.ttf);
+}
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -190,7 +194,7 @@
 
 .flip-clock-dot {
   display: block;
-  background: #323434;
+  background: white;
   width: 10px;
   height: 10px;
   position: absolute;
@@ -202,8 +206,8 @@
   position: absolute;
   top: -1.5em;
   right: -86px;
-  color: black;
-  text-shadow: none; }
+  text-shadow: none;
+ }
 
 .flip-clock-divider.minutes .flip-clock-label {
   right: -88px; }
@@ -429,3 +433,6 @@
 
   100% {
     opacity: 0; } }
+span{
+  color: white !important;
+}
