@@ -4,6 +4,9 @@
   font-family: retro;
   src :url(fonts/BadMofo.ttf);
 }
+div ul li a{
+  font-family: retro !important;
+}
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

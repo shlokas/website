@@ -45,7 +45,7 @@ animation-fill-mode:forwards ;
 .logo{
 		opacity: 0;
 		transition-delay: 2s;
-		animation: pullup 3s ease-in;
+		animation: greytocolor 5s ease-out , pullup 5s ease-in;
 		animation-fill-mode:forwards ;
 }
 .noise-wrapper{
@@ -53,7 +53,7 @@ animation-fill-mode:forwards ;
 	height: 100%;
 }
 .layer {
-    background-color: rgba(0,0, 0, 0.8);
+    background-color: rgba(0,0, 0, 0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -70,6 +70,14 @@ h1{
 }
  to {
  opacity:1;
+}
+}
+@keyframes greytocolor{
+ from {
+ filter: grayscale(1);
+}
+ to {
+ filter: grayscale(0.1);
 }
 }
 </style>
