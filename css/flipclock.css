@@ -4,7 +4,7 @@
   font-family: retro;
   src :url(fonts/BadMofo.ttf);
 }
-div ul li a{
+div ul li a span{
   font-family: retro !important;
 }
 .flip-clock-wrapper * {

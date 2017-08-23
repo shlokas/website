@@ -3,8 +3,9 @@
 		<link rel="stylesheet" href="css/flipclock.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+		<link rel="icon" href="images/logoicon.png">
 		<script src="js/flipclock.min.js"></script>
+		<title>Matrix The Fest</title>
 <style>
 @font-face{
 	font-family: retro;
@@ -53,7 +54,7 @@ animation-fill-mode:forwards ;
 	height: 100%;
 }
 .layer {
-    background-color: rgba(0,0, 0, 0.3);
+    background-color: rgba(0,0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -103,19 +104,14 @@ h1{
 		
 		$(document).ready(function() {
 			var clock;
-
-			clock = $('.clock').FlipClock({
+			var date = new Date(2017, 8, 15);
+   			var now = new Date();
+  		    var diff = (date.getTime()/1000) - (now.getTime()/1000);
+			clock = $('.clock').FlipClock(diff,{
+		        countdown: true,
 		        clockFace: 'DailyCounter',
 		        autoStart: false,
-		        callbacks: {
-		        	stop: function() {
-		        		$('.message').html('The clock has stopped!')
-		        	}
-		        }
 		    });
-				    
-		    clock.setTime(220880);
-		    clock.setCountdown(true);
 		    clock.start();
 
 		});
