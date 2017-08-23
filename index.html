@@ -1,123 +1,144 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="css/flipclock.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<link rel="icon" href="images/logoicon.png">
-		<script src="js/flipclock.min.js"></script>
-		<title>Matrix The Fest</title>
-<style>
-@font-face{
-	font-family: retro;
-	src :url(fonts/BadMofo.ttf);
-}
-body, html {
-    height: 100%;
-    margin: 0;
-}
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: retro;
-    color:white;
-}
 
-hr {
-    margin: auto;
-    width: 40%;
-}
-.clock{
-zoom: 0.7;
-opacity: 0;
--moz-transform: scale(0.7);
-animation: pullup 1s ease-in;
-animation-fill-mode:forwards ;
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Matrix 2017</title>
+    <style>
+        /*@font-face {
+            font-family: retro;
+            src: url(fonts/BadMofo.ttf);
+        }*/
 
-}
-.heading{
-		opacity: 0;
-		transition-delay: 1s;
-		animation: pullup 2s ease-in;
-animation-fill-mode:forwards ;
-}
-.logo{
-		opacity: 0;
-		transition-delay: 2s;
-		animation: greytocolor 5s ease-out , pullup 5s ease-in;
-		animation-fill-mode:forwards ;
-}
-.noise-wrapper{
-	width: 100%;
-	height: 100%;
-}
-.layer {
-    background-color: rgba(0,0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-h1{
-	font-size: 100px;
-}
-@keyframes pullup {
- from {
- opacity:0;
- transform:translateY(10%);
-}
- to {
- opacity:1;
-}
-}
-@keyframes greytocolor{
- from {
- filter: grayscale(1);
-}
- to {
- filter: grayscale(0.1);
-}
-}
-</style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
 
-	</head>
-	<body class="text-center">
-	<div class="layer">
-<div class="noise-wrapper" data-vide-bg="video/noise.mp4">
-  <div class="middle">
-  <div class="text-center logo">
-  	<img src="images/Matrixlogo2.gif"  style="height:30%;width:auto">
-  </div>
-  <br>
-    <h1 class="heading">COMING SOON</h1>
-    <br>
-	<div class="clock"></div>
-	<div class="message"></div>
-  </div>
-  </div>
-</div>
-<script type="text/javascript">
-		var clock;
-		
-		$(document).ready(function() {
-			var clock;
-			var date = new Date(2017, 8, 15);
-   			var now = new Date();
-  		    var diff = (date.getTime()/1000) - (now.getTime()/1000);
-			clock = $('.clock').FlipClock(diff,{
-		        countdown: true,
-		        clockFace: 'DailyCounter',
-		        autoStart: false,
-		    });
-		    clock.start();
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
 
-		});
-	</script>
-	<script src="js/jquery.vide.js"></script>
+        hr {
+            margin: auto;
+            width: 40%;
+        }
 
-	
-	</body>
+        .clock {
+            zoom: 0.7;
+            opacity: 0;
+            -moz-transform: scale(0.7);
+            animation: pullup 1s ease-in;
+            animation-fill-mode: forwards;
+        }
+
+        .heading {
+            opacity: 0;
+            transition-delay: 1s;
+            animation: pullup 2s ease-in;
+            animation-fill-mode: forwards;
+        }
+
+        .logo {
+            opacity: 0;
+            transition-delay: 2s;
+            animation: greytocolor 5s ease-out, pullup 5s ease-in;
+            animation-fill-mode: forwards;
+        }
+
+        .noise-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .layer {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes pullup {
+            from {
+                opacity: 0;
+                transform: translateY(10%);
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes greytocolor {
+            from {
+                filter: grayscale(1);
+            }
+            to {
+                filter: grayscale(0.1);
+            }
+        }
+
+        .flip-clock-wrapper ul li a div div.inn {
+            background-color: #008080;
+        }
+    </style>
+
+</head>
+
+<body class="text-center">
+    <div class="layer">
+        <div class="noise-wrapper" data-vide-bg="video/noise.mp4">
+            <div class="middle">
+                <div class="text-center logo">
+                    <img src="images/logo.gif" style="height:40vh;width:auto">
+                </div>
+                <br>
+                <h1 class="heading">COMING SOON</h1>
+                <br>
+                <div class="clock"></div>
+                <div class="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function () {
+            var clock;
+            var date = new Date(2017, 8, 15);
+            var now = new Date();
+            var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+            clock = $('.clock').FlipClock(diff, {
+                countdown: true,
+                clockFace: 'DailyCounter',
+                autoStart: false,
+            });
+            clock.start();
+
+        });
+    </script>
+    <script src="js/jquery.vide.js"></script>
+
+
+</body>
+
 </html>
