@@ -1,0 +1,36 @@
+* {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.dset{
+	margin-top: 3%;
+	border-radius: 20px;
+	background-color: rgba(43, 180, 162, 0.5);
+	height: 80vh;
+	min-width: 100%;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid #2bb4a2;
+	border-bottom: 50px solid transparent;
+	
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #2bb4a2;
+	border-bottom: 50px solid transparent;
+	
+}
