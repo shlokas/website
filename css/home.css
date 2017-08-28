@@ -102,14 +102,49 @@
 #team {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#team .title {
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#team .name {
+    text-transform: uppercase;
+    margin: 5px 0;
 }
 
 #chair {
-
+    min-width: 300px;
+    border: 2px solid #2bb4a2;
+    box-shadow: 0px 0px 5px 1px rgba(43, 180, 162, 0.5);
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 #vicechair {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#committee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#vicechair div, #committee div {
+    min-width: 300px;
+    margin: 5px 5px;
+    padding: 10px 20px;
+    border: 2px solid #2bb4a2;
+    box-shadow: 0px 0px 5px 1px rgba(43, 180, 162, 0.5);
+    border-radius: 10px;
 }
 
 /* Mobile Devices */
