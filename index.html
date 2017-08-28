@@ -1,49 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="favicon.ico">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>Matrix 2017</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/home.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Home -->
+            <section>
+                <img src="images/logo.gif" alt="Matrix 2017" style="height: 50vh; width: auto;">
+                <p>
+                    MATRIX is the Technical Festival of Sardar Patel Institute of Technology. Its aim is to provide a platform to learn, develop
+                    & showcase scientific, thinking skills and reach new levels of innovation. It Attracts students from
+                    all engineering and junior colleges from Mumbai University, Pune University and other neighbouring cities.
+                </p>
+                <div id="social">
+                    <a href="https://www.facebook.com/TheMatrixSPIT/" target="_blank">
+                        <img src="images/facebook.png" alt="">
+                    </a>
+                    <a href="https://twitter.com/SPIT_Matrix" target="_blank">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!-- App -->
+            <section class="text-align">
+                <div class="section-divide">
+                    <div>
+                        <h3>DOWNLOAD OUR OFFICIAL<br>ANDROID APP</h3>
+                        <img src="images/qr_code.png" alt="" class="mobile-hide"><br>
+                        <a href="">click here</a>
+                    </div>
+                    <div>
+                        <img src="images/android.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events -->
+            <section>
+                <section>
+                    <h3>EVENTS</h3>
+                    <div id="main-events">
+                        <a href="#/2/1">
+                            <div class="event-category">Mega</div>
+                        </a>
+                        <a href="#/2/2">
+                            <div class="event-category">Technical</div>
+                        </a>
+                        <a href="#/2/3">
+                            <div class="event-category">Fun</div>
+                        </a>
+                    </div>
+                </section>
+                <section class="main-event">
+                    <h3>Mega Events</h3>
+                    <div class="events">
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-event">
+                    <h3>Technical Events</h3>
+                    <div class="events">
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-event">
+                    <h3>Fun Events</h3>
+                    <div class="events">
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="event">
+                            <p>Event Name</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Partners -->
+            <section>
+                <h3>PARTNERS</h3>
+            </section>
+
+            <!-- Team -->
+
+            <!-- Contact -->
+            <section>
+                <h3>CONTACT</h3>
+                <div class="section-divide text-align">
+                    <div style="width: 400px; padding-right: 20px;">
+                        <p class="subheading">ADDRESS</p>
+                        <p>Bharatiya Vidya Bhavans Sardar Patel Institute of Technology,
+                            Bhavans Campus, Munshi Nagar, Andheri (West), Mumbai,
+                        Maharashtra 400058</p>
+                        <p class="subheading">PHONE</p>
+                        <p>(91)-(022)-26707440</p>
+                        <p class="subheading">EMAIL</p>
+                        <a href="mailto:matrix@spit.ac.in">matrix@spit.ac.in</a>
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.9718675897255!2d72.83564226591032!3d19.123355949795293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16268e5d6bca2e6a!2sSardar+Patel+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1503820125526"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            controls: true,
+            progress: false,
+            mouseWheel: true, // TODO: true
+            parallaxBackgroundImage: 'images/bg.jpg',
+            parallaxBackgroundSize: '1920px 1080px',
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+
 </html>

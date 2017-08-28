@@ -1,0 +1,124 @@
+.reveal p, .reveal div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #d92d8d;
+}
+
+.subheading {
+    font-family: "Courier New", Courier, monospace !important;
+    font-weight: 100;
+    color: #2bb4a2;
+    text-transform: lowercase;
+}
+
+.subheading::before {
+    content: '<';
+}
+
+.subheading::after {
+    content: '/>';
+}
+
+.reveal section img {
+    background: none;
+    border: none;
+}
+
+.reveal p {
+    font-size: 25px;
+}
+
+#social {
+    height: 60px;
+}
+
+#social a {
+    padding: 0px 10px;
+}
+
+.text-align {
+    text-align: left;
+}
+
+.section-divide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-events {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-events .event-category {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid #d92d8d;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #d92d8d;
+    transition: all 0.2s ease-in-out;
+}
+
+#main-events .event-category:hover {
+    transform: translate(0, -20px);
+    border-color:#d92d8d;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.events .event {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #2bb4a2;
+    box-shadow: 0px 0px 10px 1px #2bb4a2;
+    border-radius: 2px;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .text-align {
+        text-align: center;
+    }
+    
+    .section-divide {
+        flex-wrap: wrap;
+    }
+
+    #main-events {
+        flex-wrap: wrap;
+    }
+
+    #main-events .event-category {
+        width: 500px;
+        height: 200px;
+    }
+}
