@@ -1,11 +1,8 @@
-* {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     background-image: url('../images/bg.jpg');
     background-size: cover;
 }
@@ -48,6 +45,7 @@ body {
 
 #details {
     margin: 10px 0;
+    font-family: "Courier New", Courier, monospace !important;
     font-size: 1.2em;
 }
 

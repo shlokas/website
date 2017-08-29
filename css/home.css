@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Market Deco';
+    src: url('../fonts/Market_Deco.ttf');
+}
+
 .reveal p, .reveal div {
     font-family: 'Montserrat', sans-serif;
 }
@@ -8,9 +13,26 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Market Deco', sans-serif;
     font-weight: 100;
     color: #d92d8d;
+}
+
+.reveal section img {
+    background: none;
+    border: none;
+}
+
+.reveal p {
+    font-size: 25px;
+}
+
+.reveal a {
+    color: #2bb4a2;
+}
+
+.reveal a:hover {
+    color: white;
 }
 
 .subheading {
@@ -26,15 +48,6 @@
 
 .subheading::after {
     content: '/>';
-}
-
-.reveal section img {
-    background: none;
-    border: none;
-}
-
-.reveal p {
-    font-size: 25px;
 }
 
 #social {
@@ -106,14 +119,25 @@
 }
 
 #team .title {
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 5px 0;
     font-size: 18px;
+    font-family: "Courier New", Courier, monospace !important;
+    font-weight: 100;
+    font-size: 1.2rem;
 }
 
 #team .name {
     text-transform: uppercase;
     margin: 5px 0;
+}
+
+#team .title::before {
+    content: '<';
+}
+
+#team .title::after {
+    content: '/>';
 }
 
 #chair {
