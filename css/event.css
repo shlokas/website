@@ -1,5 +1,6 @@
 * {
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -9,28 +10,51 @@ body {
     background-size: cover;
 }
 
-.dset{
-	margin-top: 3%;
-	border-radius: 20px;
-	background-color: rgba(43, 180, 162, 0.5);
-	height: 80vh;
-	min-width: 100%;
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-right: 100px solid #2bb4a2;
-	border-bottom: 50px solid transparent;
-	
+#header {
+    border: 2px solid #2bb4a2;
+    box-shadow: 0px 0px 5px 1px rgba(43, 180, 162, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    transform: skew(-10deg) rotate(2deg);
 }
 
-.triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid #2bb4a2;
-	border-bottom: 50px solid transparent;
-	
+#header h1 {
+    padding: 0;
+    transform: skew(10deg) rotate(-2deg);
+    text-shadow: 0px 0px 10px rgba(43, 180, 162, 0.75);
+}
+
+#content {
+    max-width: 80vw;
+    text-align: center;
+    background-color: rgba(43, 180, 162, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#desc {
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+#details {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#details .title {
+    font-weight: bold;
+}
+
+#details div {
+    margin: 5px 0;
 }
