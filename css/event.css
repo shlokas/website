@@ -38,6 +38,10 @@ body {
     margin: 20px;
 }
 
+#poster {
+    width: 100%;
+}
+
 #desc {
     margin: 10px;
     font-size: 1.3em;
@@ -55,4 +59,9 @@ body {
 
 #details div {
     margin: 5px 0;
+}
+
+.align{
+    margin-left: 0px;
+    text-align: left;
 }

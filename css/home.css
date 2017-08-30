@@ -7,12 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     font-family: 'Market Deco', sans-serif;
     font-weight: 100;
     color: #d92d8d;
@@ -21,6 +16,7 @@
 .reveal section img {
     background: none;
     border: none;
+    margin: 0;
 }
 
 .reveal p {
@@ -48,6 +44,17 @@
 
 .subheading::after {
     content: '/>';
+}
+
+#date {
+    background-color: #2bb4a2;
+    padding: 5px 0;
+    font-size: 0.8em;
+    font-family: 'Market Deco', sans-serif;
+}
+
+#date sup {
+    font-size: 0.6em;
 }
 
 #social {
@@ -92,7 +99,7 @@
 
 #main-events .event-category:hover {
     transform: translate(0, -20px);
-    border-color:#d92d8d;
+    border-color: #d92d8d;
 }
 
 .events {
@@ -192,36 +199,34 @@
 }
 
 .team-img {
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     max-height: 80vh;
     max-width: 80vw;
-    margin:auto;
+    margin: auto;
     z-index: 50;
     display: none;
 }
 
+
 /* Mobile Devices */
+
 @media only screen and (max-width: 768px) {
     .mobile-hide {
         display: none;
     }
-
     .text-align {
         text-align: center;
     }
-    
     .section-divide {
         flex-wrap: wrap;
     }
-
     #main-events {
         flex-wrap: wrap;
     }
-
     #main-events .event-category {
         width: 500px;
         height: 200px;

@@ -15,7 +15,7 @@ $('.psuedo-btn').click(function(e) {
     // for events
     if (type === 'event') {
         var target = $(this).data('target');
-        window.open(target);
+        window.open('event/' + target);
     }
 })
 
