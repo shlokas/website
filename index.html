@@ -1,271 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" href="favicon.ico">
+    <title>ZORBING</title>
 
-    <title>Matrix 2017</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
-    <link rel="stylesheet" href="css/home.css">
-
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+    <link rel="stylesheet" type="text/css" href="../../css/event.css">
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <!-- Home -->
-            <section>
-                <img src="images/logo.png" alt="Matrix 2017" style="height: 40vh; width: auto;">
-                <p id="date">
-                    15<sup>th</sup> - 16<sup>th</sup> September
-                </p>
-                <p>
-                    MATRIX is the Technical Festival of Sardar Patel Institute of Technology. Its aim is to provide a platform to learn, develop
-                    & showcase scientific, thinking skills and reach new levels of innovation. It Attracts students from
-                    all engineering and junior colleges from Mumbai University, Pune University and other neighbouring cities.
-                </p>
-                <div id="social">
-                    <a href="https://www.facebook.com/TheMatrixSPIT/" target="_blank">
-                        <img src="images/facebook.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/matrixthefest/" target="_blank">
-                        <img src="images/instagram.png" alt="">
-                    </a>
-                    <a href="https://twitter.com/SPIT_Matrix" target="_blank">
-                        <img src="images/twitter.png" alt="">
-                    </a>
+    <div id="wrapper">
+        <div id="header">
+                <h1>ZORBING</h1>
+        </div>
+
+        <div id="content">
+            <img src="../../images/poster/Zorbing.jpg" alt="" id="poster">
+            <div id="desc">
+				Matrix presents to you *Zorbing*, a fun event for all. Try your hand or rather your leg) at Football inside a Zorb ball.
+				Feel what its like to just let everything go and fall face first into the ground, or even better, making your friends fall face first into the ground!!
+            </div>
+
+            <div id="details">
+                <div id="date">
+                    <span class="title">Date:</span>
+                    <span class="text">15 September</span>
                 </div>
-            </section>
-
-            <!-- App -->
-            <section class="text-align">
-                <div class="section-divide">
-                    <div>
-                        <h3>DOWNLOAD OUR OFFICIAL<br>ANDROID APP</h3>
-                        <img src="images/qr_code.png" alt="" class="mobile-hide"><br>
-                        <a href="">click here</a>
-                    </div>
-                    <div>
-                        <img src="images/android.png" alt="">
-                    </div>
+                <div id="time">
+                    <span class="title">Time:</span>
+                    <span class="text"></span>
                 </div>
-            </section>
-
-            <!-- Events -->
-            <section>
-                <section>
-                    <h3>EVENTS</h3>
-                    <div id="main-events">
-                        <a href="#/2/1">
-                            <div class="event-category">Mega</div>
-                        </a>
-                        <a href="#/2/2">
-                            <div class="event-category">Technical</div>
-                        </a>
-                        <a href="#/2/3">
-                            <div class="event-category">Fun</div>
-                        </a>
-                    </div>
-                </section>
-                <section class="main-event">
-                    <h3>Mega Events</h3>
-                    <div class="events">
-                        <div class="event psuedo-btn" data-type="event" data-target="robowars">
-                            <p>Robowars</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="techrace">
-                            <p>Techrace</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="virtual-placements">
-                            <p>Virtual Placement</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="virtual-stock-market">
-                            <p>Virtual Stock Market</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="entrepreneurship-talk">
-                            <p>Entreprenuership Talk</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="project-exhibition">
-                            <p>Project Exhibition</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="stand-up-comedy">
-                            <p>Standup Comedy</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="main-event">
-                    <h3>Technical Events</h3>
-                    <div class="events">
-                        <div class="event psuedo-btn" data-type="event" data-target="tech-paper-presentation">
-                            <p>Tech Paper Presentation</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="codatron">
-                            <p>Codatron</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="techquiz">
-                            <p>Techquiz</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="main-event">
-                    <h3>Fun Events</h3>
-                    <div class="events">
-                        <div class="event psuedo-btn" data-type="event" data-target="chaotic-house">
-                            <p>Chaotic House</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="human-foosball">
-                            <p>Human Foosball</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="lan-gaming">
-                            <p>Lan Gaming</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="lan-mafia">
-                            <p>Lan Mafia</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="laser-tag">
-                            <p>Laser Tag</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="line-follow-bot">
-                            <p>Line Follow Bot</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="mind-that-word">
-                            <p>Mind That Word</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="robosoccer">
-                            <p>Robosoccer</p>
-                        </div>
-                        <div class="event psuedo-btn" data-type="event" data-target="zorbing">
-                            <p>Zorbing</p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <!-- Partners -->
-            <!-- <section>
-                <h3>PARTNERS</h3>
-            </section> -->
-
-            <!-- Team -->
-            <section>
-                <h3>TEAM</h3>
-                <div id="team">
-                    <div id="chair" class="psuedo-btn" data-type="team" data-target="cp">
-                        <p class="title">Chairperson</p>
-                        <p class="name">Riya Bakhtiani</p>
-                    </div>
-                    <div id="vicechair">
-                        <div class="psuedo-btn" data-type="team" data-target="vcp_kd">
-                            <p class="title">Vice Chairperson</p>
-                            <p class="name">Kamya Desai</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="vcp_sc">
-                            <p class="title">Vice Chairperson</p>
-                            <p class="name">Sushmen Chaudhari</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="vcp_ak">
-                            <p class="title">Vice Chairperson</p>
-                            <p class="name">Ashish Kulkarni</p>
-                        </div>
-                    </div>
-                    <div id="committee">
-                        <div class="psuedo-btn" data-type="team" data-target="admin">
-                            <p class="name">Admin</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="events">
-                            <p class="name">Events</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="security">
-                            <p class="name">Security</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="hospitality">
-                            <p class="name">Hospitality</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="tech">
-                            <p class="name">Technical</p>
-                        </div>
-                        <div class="psuedo-btn" data-type="team" data-target="creative">
-                            <p class="name">Creatives</p>
-                        </div>
-                    </div>
+                <div id="venue">
+                    <span class="title">Venue:</span>
+                    <span class="text">Sardar Patel Institute of Technology Quadrangle</span>
                 </div>
-            </section>
-
-            <!-- Contact -->
-            <section>
-                <h3>CONTACT</h3>
-                <div class="section-divide text-align">
-                    <div style="width: 400px; padding-right: 20px;">
-                        <p class="subheading">ADDRESS</p>
-                        <p>Bharatiya Vidya Bhavans Sardar Patel Institute of Technology, Bhavans Campus, Munshi Nagar, Andheri
-                            (West), Mumbai, Maharashtra 400058</p>
-                        <p class="subheading">PHONE</p>
-                        <p>(91)-(022)-26707440</p>
-                        <p class="subheading">EMAIL</p>
-                        <a href="mailto:matrix@spit.ac.in">matrix@spit.ac.in</a>
-                    </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.9718675897255!2d72.83564226591032!3d19.123355949795293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16268e5d6bca2e6a!2sSardar+Patel+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1503820125526"
-                            width="450" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+				<div id="team">
+                    <span class="title">Team Size:</span>
+                    <span class="text">4 Members</span>
                 </div>
-            </section>
+                <div id="fees">
+                    <span class="title">Fees:</span><br>
+                    <span class="text">Pre-Registration: ₹ 330 Per Team | </span>
+					<span class="text">₹ 90 Per Person </span><br>
+					<span class="text">On-Spot Registration: ₹ 400 Per Team |</span>
+					<span class="text">₹ 110 Per Person  </span><br>
+                </div>
+                <div id="contact">
+                    <span class="title">Contact:</span>
+                    <span class="text">Niket: 9773120383 | Vaibhav: 9820895314</span>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Team Photos -->
-    <div id="black-overlay"></div>
-    <img src="images/team/tech.jpg" alt="Technical Support" class="team-img" id="tech-img">
-    <img src="images/team/cp.jpg" alt="Chairperson" class="team-img" id="cp-img">
-    <img src="images/team/vcp_kd.jpg" alt="Vice Chairperson" class="team-img" id="vcp_kd-img">
-    <img src="images/team/vcp_sc.jpg" alt="Vice Chairperson" class="team-img" id="vcp_sc-img">
-    <img src="images/team/vcp_ak.jpg" alt="Vice Chairperson" class="team-img" id="vcp_ak-img">
-    <img src="images/team/admin.jpg" alt="Administrartion" class="team-img" id="admin-img">
-    <img src="images/team/events.jpg" alt="Events" class="team-img" id="events-img">
-    <img src="images/team/security.jpg" alt="Security" class="team-img" id="security-img">
-    <img src="images/team/hospitality.jpg" alt="Hospitality" class="team-img" id="hospitality-img">
-    <img src="images/team/creative.jpg" alt="Creatives" class="team-img" id="creative-img">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-    <script src="js/home.js"></script>
-
-    <script>
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            controls: true,
-            progress: false,
-            mouseWheel: true, // TODO: true
-            parallaxBackgroundImage: 'images/bg.jpg',
-            parallaxBackgroundSize: '1920px 1080px',
-            dependencies: [
-                { src: 'plugin/markdown/marked.js' },
-                { src: 'plugin/markdown/markdown.js' },
-                { src: 'plugin/notes/notes.js', async: true },
-                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
-            ]
-        });
-    </script>
 </body>
 
 </html>
