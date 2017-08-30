@@ -57,6 +57,10 @@
     font-size: 0.6em;
 }
 
+#go-right {
+    width: 20px;
+}
+
 #social {
     height: 60px;
 }
