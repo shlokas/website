@@ -173,7 +173,7 @@
     align-items: center;
 }
 
-#vicechair div, #committee div {
+#vicechair div, #committee div, #techhead {
     min-width: 250px;
     margin: 10px 5px;
     padding: 10px 20px;
