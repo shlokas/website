@@ -214,7 +214,20 @@
     z-index: 50;
     display: none;
 }
-
+.partners{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#titlesponsor{
+    height: 30%;
+    border:solid 1px white;
+}
+#cosponsor{
+    height: 20%;
+    border:solid 1px yellow;
+}
 
 /* Mobile Devices */
 
