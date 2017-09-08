@@ -220,15 +220,25 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+#sponsor-container{
+    height: 10vh;
+    width: auto;
+    margin: 4px;
+}
+#sponsorlogo{
+    height: 10vh;
+    width: auto;
+}
 #titlesponsor{
-    height: 30%;
-    border:solid 1px white;
+    height: 15vh;
+    width: auto;
+    margin:2px;
 }
 #cosponsor{
-    height: 20%;
-    border:solid 1px yellow;
+    height: 12vh;
+    width:auto;
+    margin:2px;
 }
-
 /* Mobile Devices */
 
 @media only screen and (max-width: 768px) {
@@ -247,5 +257,17 @@
     #main-events .event-category {
         width: 500px;
         height: 100px;
+    }
+    #sponsor-container{
+        height: 12vh;
+    }
+    #sponsorlogo{
+        height: 12vh;
+    }
+    #titlesponsor{
+        height: 17vh;
+    }
+    #cosponsor{
+        height: 15vh;
     }
 }

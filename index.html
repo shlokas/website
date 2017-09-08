@@ -31,7 +31,7 @@
     <div class="reveal">
         <div class="slides">
             <!-- Home -->
-            <section>
+            <section class="center">
                 <img src="images/logo.png" alt="Matrix 2017" style="height: 40vh; width: auto;">
                 <p id="date">
                     15<sup>th</sup> - 16<sup>th</sup> September
@@ -55,7 +55,7 @@
             </section>
 
             <!-- App -->
-            <section class="text-align">
+            <section class="text-align center">
                 <div class="section-divide">
                     <div>
                         <h3>DOWNLOAD OUR OFFICIAL<br>ANDROID APP</h3>
@@ -70,7 +70,7 @@
 
             <!-- Events -->
             <section>
-                <section>
+                <section class="center">
                     <h3>EVENTS</h3>
                     <div id="main-events">
                         <a href="#/2/1">
@@ -87,7 +87,7 @@
                         </a>
                     </div>
                 </section>
-                <section class="main-event">
+                <section class="main-event center">
                     <h3>Champion-ships</h3>
                     <div class="events">
                         <div class="event psuedo-btn" data-type="event" data-target="robowars">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main-event">
+                <section class="main-event center">
                     <h3>Talks & Exhibitions</h3>
                     <div class="events">
                         <div class="event psuedo-btn" data-type="event" data-target="iot-talk">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main-event">
+                <section class="main-event center">
                     <h3>Featured Events</h3>
                     <div class="events">
                         <div class="event psuedo-btn" data-type="event" data-target="virtual-placements">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main-event">
+                <section class="main-event center">
                     <h3>Fun Events</h3>
                     <div class="events">
                         <div class="event psuedo-btn" data-type="event" data-target="chaotic-house">
@@ -177,17 +177,34 @@
                     </div>
                 </section>
             </section>
-            <!--
+<!--
             <section>
                 <h3>PARTNERS</h3>
+                <div class="text-center" id="titlesponsor"><img src="images/partners/nestle.png" id="titlesponsor" alt=""/></div>
+                <div class="text-center" id="cosponsor"><img src="images/partners/nestle.png" id="cosponsor"</div>
                 <div class="partners">
-                <div class="text-center" id="titlesponsor"><h1>hello</h1></div>
-                    <div class="text-center" id="cosponsor"><h2>its working</h2></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
+                    <div id="sponsor-container"><img id="sponsorlogo" src="images/partners/nestle.png" alt=""/></div>
                 </div>
             </section>
-            -->
+-->
             <!-- Team -->
-            <section>
+            <section class="center">
                 <h3>TEAM</h3>
                 <div id="team">
                     <div id="chair" class="psuedo-btn" data-type="team" data-target="cp">
@@ -244,7 +261,7 @@
             </section>
 
             <!-- Developers -->
-            <section>
+            <section class="center">
                 <h3>Developers</h3>
                 <div id="team">
                         <div id="techhead" class="psuedo-btn" data-type="team" data-target="an">
@@ -265,7 +282,7 @@
             </section>
 
             <!-- Contact -->
-            <section>
+            <section class="center">
                 <h3>CONTACT</h3>
                 <div class="section-divide text-align">
                     <div style="width: 400px; padding-right: 20px;">
@@ -321,6 +338,7 @@
             controls: true,
             progress: false,
             history: true,
+            center:false,
             overview: false,
             mouseWheel: true, // TODO: true
             parallaxBackgroundImage: 'images/bg.jpg',
