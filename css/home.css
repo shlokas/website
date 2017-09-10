@@ -221,12 +221,12 @@
     justify-content: center;
 }
 #sponsor-container{
-    height: 10vh;
+    height: 100px;
     width: auto;
     margin: 4px;
 }
 #sponsorlogo{
-    height: 10vh;
+    height: 80px;
     width: auto;
 }
 #titlesponsor{
@@ -257,12 +257,6 @@
     #main-events .event-category {
         width: 500px;
         height: 100px;
-    }
-    #sponsor-container{
-        height: 12vh;
-    }
-    #sponsorlogo{
-        height: 12vh;
     }
     #titlesponsor{
         height: 150px;
