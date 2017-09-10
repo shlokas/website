@@ -230,14 +230,14 @@
     width: auto;
 }
 #titlesponsor{
-    height: 15vh;
+    height: 200px;
     width: auto;
-    margin:2px;
+    margin:10px;
 }
 #cosponsor{
-    height: 12vh;
+    height: 100px;
     width:auto;
-    margin:2px;
+    margin:10px;
 }
 /* Mobile Devices */
 
@@ -265,9 +265,9 @@
         height: 12vh;
     }
     #titlesponsor{
-        height: 17vh;
+        height: 150px;
     }
     #cosponsor{
-        height: 15vh;
+        height: 80px;
     }
 }
