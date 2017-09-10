@@ -218,15 +218,15 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 #sponsor-container{
-    height: 100px;
+    height: 70px;
     width: auto;
     margin: 4px;
 }
 #sponsorlogo{
-    height: 80px;
+    height: 50px;
     width: auto;
 }
 #titlesponsor{
