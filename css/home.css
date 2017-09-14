@@ -221,12 +221,12 @@
     justify-content: space-around;
 }
 #sponsor-container{
-    height: 70px;
+    height: 120px;
     width: auto;
     margin: 4px;
 }
 #sponsorlogo{
-    height: 50px;
+    height: 100px;
     width: auto;
 }
 #titlesponsor{
@@ -263,5 +263,8 @@
     }
     #cosponsor{
         height: 80px;
+    }
+    .partners{
+        flex-wrap: wrap;
     }
 }
